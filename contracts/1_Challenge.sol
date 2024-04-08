@@ -5,7 +5,7 @@ pragma solidity 0.8.25;
 contract Challenge_1 {
     uint num;
     string name;
-    bool fall;
+    bool isFalse;
     int negNum;
 
     function setNegNum(int _negNum) public {
@@ -32,11 +32,11 @@ contract Challenge_1 {
         return  name;
     }
 
-    function setBool(bool _fall) public {
-        fall = _fall;
+    function setBool(bool _isFalse) public {
+        isFalse = _isFalse;
     }
     function getBool() public view returns (bool){
-        return fall;
+        return isFalse;
     }
     
 }
